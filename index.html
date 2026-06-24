@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abeil Rafli Aldhani — IT Enthusiast</title>
+  <meta name="description" content="Portfolio Abeil Rafli Aldhani — Fresh Graduate S1 Teknik Informatika, IT Support, Network Engineer, Cyber Security." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NETWORK CANVAS BACKGROUND -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- ── NAV ── -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">&gt; Abeil</a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about">Tentang</a></li>
+    <li><a href="#skills">Skill</a></li>
+    <li><a href="#experience">Pengalaman</a></li>
+    <li><a href="#education">Pendidikan</a></li>
+    <li><a href="#certs">Sertifikat</a></li>
+    <li><a href="#contact">Kontak</a></li>
+  </ul>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-inner">
+    <span class="hero-badge" id="hero-badge"></span>
+    <h1 id="hero-name"></h1>
+    <p class="hero-sub">
+      IT Enthusiast<br>
+      <span id="typed-text"></span>
+    </p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
+      <a href="#experience" class="btn btn-outline">Lihat Pengalaman</a>
+    </div>
+  </div>
+  <div class="scroll-hint">scroll</div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="section-wrap">
+    <div class="section-label">01 &mdash; about me</div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <h2>Saya membangun<br><em>sistem yang andal</em></h2>
+        <div id="about-summary"></div>
+        <div class="about-stats" id="about-stats"></div>
+      </div>
+      <div class="about-visual reveal">
+        <div class="avatar-ring">
+          <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="120" cy="120" r="110" stroke="#00D4FF" stroke-width="1" stroke-dasharray="6 4" opacity=".4">
+              <animateTransform attributeName="transform" type="rotate" from="0 120 120" to="360 120 120" dur="30s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="120" cy="120" r="88" stroke="#00D4FF" stroke-width="2" opacity=".2"/>
+            <circle cx="120" cy="120" r="66" stroke="#FFB800" stroke-width="1" stroke-dasharray="3 5" opacity=".3">
+              <animateTransform attributeName="transform" type="rotate" from="360 120 120" to="0 120 120" dur="18s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="120" cy="120" r="60" fill="#0F1628"/>
+            <circle cx="120" cy="10" r="5" fill="#00D4FF" opacity=".9">
+              <animateTransform attributeName="transform" type="rotate" from="0 120 120" to="360 120 120" dur="12s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="230" cy="120" r="4" fill="#FFB800" opacity=".8">
+              <animateTransform attributeName="transform" type="rotate" from="0 120 120" to="360 120 120" dur="18s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="120" cy="230" r="3" fill="#00D4FF" opacity=".6">
+              <animateTransform attributeName="transform" type="rotate" from="0 120 120" to="360 120 120" dur="22s" repeatCount="indefinite"/>
+            </circle>
+          </svg>
+          <div class="avatar-initials">AR</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills">
+  <div class="section-wrap">
+    <div class="section-label">02 &mdash; skills &amp; tools</div>
+    <h2>Kompetensi <em>Teknis</em></h2>
+    <div class="skills-grid" id="skills-grid"></div>
+  </div>
+</section>
+
+<!-- ── EXPERIENCE ── -->
+<section id="experience">
+  <div class="section-wrap">
+    <div class="section-label">03 &mdash; experience</div>
+    <h2>Pengalaman <em>Kerja</em></h2>
+    <div class="timeline reveal" id="timeline"></div>
+  </div>
+</section>
+
+<!-- ── EDUCATION ── -->
+<section id="education">
+  <div class="section-wrap">
+    <div class="section-label">04 &mdash; education</div>
+    <h2>Riwayat <em>Pendidikan</em></h2>
+    <div class="edu-grid" id="edu-grid"></div>
+  </div>
+</section>
+
+<!-- ── CERTS ── -->
+<section id="certs">
+  <div class="section-wrap">
+    <div class="section-label">05 &mdash; certifications</div>
+    <h2>Sertifikat <em>Profesional</em></h2>
+    <div class="certs-grid" id="certs-grid"></div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="section-wrap">
+    <div class="contact-wrap">
+      <div class="section-label" style="justify-content:center">06 &mdash; contact</div>
+      <h2 class="reveal">Mari <em>Terhubung</em></h2>
+      <p class="hero-sub reveal">
+        Saya terbuka untuk peluang kerja, kolaborasi, atau sekadar berdiskusi soal IT &amp; , Jangan ragu untuk menghubungi saya!
+      </p>
+      <div class="contact-links reveal" id="contact-links"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Abeil Rafli Aldhani</p>
+</footer>
+
+<!-- Scripts — data first, then main logic -->
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
