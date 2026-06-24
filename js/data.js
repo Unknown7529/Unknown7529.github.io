@@ -30,7 +30,7 @@ const DATA = {
 
   contact: {
     email:    "abeilrfl@gmail.com",
-    github:   "https://github.com/Unknown75299",
+    github:   "/Unknown75299",
     linkedin: "https://www.linkedin.com/in/abeil-rafli/",
     location: "Cibinong, Bogor"
     
